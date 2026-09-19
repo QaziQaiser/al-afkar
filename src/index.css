@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+:root {
+  --primary-emerald: #064e3b;
+  --primary-dark: #00382e;
+  --accent-green: #22c55e;
+  --accent-light: #4ade80;
+  --slate-dark: #0b192c;
+  --slate-deeper: #07101e;
+  --gold-accent: #d4af37;
+  --gold-light: #f3e5ab;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Arabic RTL Typography */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .font-heading {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  font-weight: 800;
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Glassmorphic UI utilities */
+.glass-nav {
+  background: rgba(11, 25, 44, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-dark {
+  background: rgba(11, 25, 44, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Glowing Neon Elements */
+.glow-green {
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.3);
+  transform: translateY(-4px);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(11, 25, 44, 0.92) 0%, rgba(6, 78, 59, 0.85) 60%, rgba(0, 56, 46, 0.95) 100%);
+}
+
+.stats-gradient {
+  background: linear-gradient(135deg, #0b192c 0%, #064e3b 50%, #082f49 100%);
+}
+
+/* Subtle Shimmer & Pulse Animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b192c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #059669;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Floating Badges */
+.floating-badge {
+  background: rgba(11, 25, 44, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-badge:hover {
+  border-color: #22c55e;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -4px rgba(34, 197, 94, 0.35);
+}
+
+/* Filter Tab active state */
+.tab-active {
+  background-color: #064e3b;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(6, 78, 59, 0.35);
+}
+
+.tab-inactive {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+.tab-inactive:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
