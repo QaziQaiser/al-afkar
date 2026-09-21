@@ -33,7 +33,7 @@ export default function About({ lang, onOpenCertModal }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
               <img 
-                src="https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=900&q=80" 
+                src="media/images/img/tower-foundation-civil-works.jpg" 
                 alt="Al-Afkar Site Engineers inspecting foundation work" 
                 className="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />

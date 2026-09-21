@@ -75,7 +75,7 @@ export default function WhyChooseUs({ lang }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
               <img 
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" 
+                src="media/images/img/heavy-crane-tower-erection.jpg" 
                 alt="Al-Afkar on-site engineering team with high-vis safety vests" 
                 className="w-full h-[440px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />

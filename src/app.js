@@ -182,8 +182,28 @@ const translations = {
     'gal-6-desc': 'Civil balance of plant, site grading, pile ramming, and solar farm interconnection corridors.',
     
     'team-pill': 'Executive Leadership & Key Personnel',
-    'team-headline': 'Leadership & Key Management Personnel',
-    'team-sub': 'Direct points of contact for project coordination, financial governance, engineering management, and QHSE compliance.',
+    'team-headline': 'Leadership & Senior Management Personnel',
+    'team-sub': 'Direct points of contact for executive governance, site operations, technical estimations, and QHSE compliance.',
+    'ceo-statement-pill': 'Executive Leadership Message',
+    'ceo-statement-badge': 'Chief Executive Officer',
+    'ceo-name': 'Eid Abed Aljuid',
+    'ceo-title': 'Chief Executive Officer (CEO)',
+    'ceo-est-name': 'Al Afkar Al Mutafaridah Establishment',
+    'ceo-quote-title': 'Message from the CEO',
+    'ceo-quote-kicker': 'KSA Vision 2030 Alignment',
+    'ceo-quote-body': 'At Al Afkar Al Mutafaridah Establishment, our vision is to become a trusted and professionally managed infrastructure company in the Kingdom of Saudi Arabia. Our primary focus is Power & Transmission Infrastructure, including overhead transmission lines, tower assembly and erection, and related power works.',
+    'ceo-focus-1-lbl': 'Primary Focus',
+    'ceo-focus-1-val': 'Power & Transmission (OHTL)',
+    'ceo-focus-2-lbl': 'Field Capabilities',
+    'ceo-focus-2-val': 'Tower Assembly & Erection',
+    'ceo-focus-3-lbl': 'National Vision',
+    'ceo-focus-3-val': 'Trusted Infrastructure in KSA',
+    'team-sub-heading': 'Executive & Engineering Key Contacts',
+    'team-sub-desc': 'Direct contact channels for project coordinators, financial officers, and technical management.',
+    'team-ceo-badge': 'Executive Leadership',
+    'team-ceo-name': 'Eid Abed Aljuid',
+    'team-ceo-title': 'Chief Executive Officer (CEO)',
+    'team-ceo-bio': 'Leading strategic expansion, corporate governance, and infrastructure development across high-voltage power transmission and civil works in Saudi Arabia.',
     'team-1-badge': 'Project Coordination',
     'team-1-name': 'Saqib Ullah',
     'team-1-title': 'Project Coordinator',
@@ -410,9 +430,29 @@ const translations = {
     'gal-6-title': 'تهيئة مواقع مشاريع الطاقة الشمسية',
     'gal-6-desc': 'أعمال التسوية الترابية وغرس القواعد ومسارات الربط بمحطات الطاقة الشمسية.',
     
-    'team-pill': 'القيادة الفنية والإدارية',
-    'team-headline': 'فريق القيادة والإدارة الفنية والمالية',
-    'team-sub': 'يقود مؤسسة الأفكار المتفردة نخبة من الكفاءات الإدارية والهندسية المتخصصة في إدارة وتنسيق مشاريع خطوط النقل والإنشاءات والمالية.',
+    'team-pill': 'القيادة التنفيذية والإدارية',
+    'team-headline': 'فريق القيادة ورؤية الإدارة التنفيذية',
+    'team-sub': 'يقود مؤسسة الأفكار المتفردة نخبة من الكفاءات الوطنية والهندسية المتخصصة في قيادة وتنسيق أضخم مشاريع خطوط النقل والإنشاءات بالمملكة.',
+    'ceo-statement-pill': 'رسالة الإدارة التنفيذية',
+    'ceo-statement-badge': 'الرئيس التنفيذي',
+    'ceo-name': 'عيد عابد الجعيد',
+    'ceo-title': 'الرئيس التنفيذي',
+    'ceo-est-name': 'مؤسسة الأفكار المتفردة للمقاولات',
+    'ceo-quote-title': 'رسالة الرئيس التنفيذي',
+    'ceo-quote-kicker': 'مواكبة لرؤية المملكة 2030',
+    'ceo-quote-body': 'في مؤسسة الأفكار المتفردة للمقاولات، تتمثل رؤيتنا في أن نصبح شركة رائدة وموثوقة ومُدارة باحترافية في مجال البنية التحتية بالمملكة العربية السعودية. ينصب تركيزنا الأساسي على البنية التحتية للطاقة ونقل الكهرباء، بما في ذلك خطوط النقل الهوائية، وتجميع ونصب الأبراج الفولاذية، وكافة الأعمال الكهربائية المرتبطة بها.',
+    'ceo-focus-1-lbl': 'التركيز الأساسي',
+    'ceo-focus-1-val': 'خطوط النقل والطاقة (OHTL)',
+    'ceo-focus-2-lbl': 'التميز الميداني',
+    'ceo-focus-2-val': 'تجميع ونصب الأبراج الفولاذية',
+    'ceo-focus-3-lbl': 'الرؤية الوطنية',
+    'ceo-focus-3-val': 'بنية تحتية موثوقة بالمملكة',
+    'team-sub-heading': 'الدليل الإداري والهندسي المباشر',
+    'team-sub-desc': 'للتواصل المباشر مع مديري المشاريع والمالية والإدارة الهندسية بالمؤسسة.',
+    'team-ceo-badge': 'القيادة التنفيذية',
+    'team-ceo-name': 'عيد عابد الجعيد',
+    'team-ceo-title': 'الرئيس التنفيذي',
+    'team-ceo-bio': 'قيادة التوسع الاستراتيجي والحوكمة المؤسسية وتطوير مشاريع البنية التحتية للطاقة وخطوط النقل بالمملكة.',
     'team-1-badge': 'تنسيق المشاريع',
     'team-1-name': 'ثاقب الله',
     'team-1-title': 'منسق المشاريع',
@@ -615,6 +655,9 @@ function toggleLanguage() {
   // Re-render equipment grid in new language
   renderEquipment();
   updateCalc();
+  if (window.lucide) {
+    lucide.createIcons();
+  }
 }
 
 // 8. Mobile Menu Toggle
@@ -630,7 +673,7 @@ const serviceData = {
   power: {
     titleEn: 'Power & Transmission Lines (OHTL)',
     titleAr: 'الطاقة وخطوط النقل الكهربائي (OHTL)',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/500kv-transmission-line.jpg',
     descEn: 'Al-Afkar Al-Mutafaredah is a leader in OHTL engineering in Saudi Arabia. From deep desert corridors to mountainous terrains, our certified riggers execute tower foundations, tower assembly, crane hoisting, OPGW stringing, and conductor sagging under the most stringent SEC and international specifications.',
     descAr: 'تعد مؤسسة الأفكار المتفردة رائدة في هندسة خطوط النقل الهوائية بالمملكة، حيث تنفذ فرقنا المتخصصة أعمال الأساسات والتجميع والرفع بالأوناش وسحب موصلات الطاقة وكابلات OPGW وفق أحدث مواصفات الشركة السعودية للكهرباء والمعايير العالمية.',
     bulletsEn: ['Overhead Transmission Lines (110kV – 765kV)', 'Tower Assembly & Crane Erection', 'Conductor & OPGW Stringing', 'Paul Nut, Insulators & Hardware Tightening', 'Emergency Stringing & Rehabilitation'],
@@ -639,7 +682,7 @@ const serviceData = {
   civil: {
     titleEn: 'Civil Construction & Substation Works',
     titleAr: 'الإنشاءات والأعمال المدنية ومحطات التحويل',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/civil-construction.jpg',
     descEn: 'Our civil engineering division operates heavy-duty formwork sets (including Form Box 380kV S1N systems), concrete pumps, and compaction machinery to build resilient foundations tailored to complex geotechnical soil profiles throughout KSA.',
     descAr: 'يمتلك قسم الأعمال المدنية أحدث قوالب الشدات المعتمدة (بما فيها نماذج 380 ك.ف S1N) ومعدات دمك التربة وصب الخرسانة لتنفيذ قواعد صلبة تقاوم العوامل الجوية وطبيعة التربة المختلفة في كافة مناطق المملكة.',
     bulletsEn: ['Tower Foundation Civil Works & Concrete Footings', 'Substation Control Building Foundations', 'Deep Excavation, Trenching & Backfilling', 'Form Box 380kV S1N Certified Formwork', 'Access Roads & Industrial Site Preparation'],
@@ -648,7 +691,7 @@ const serviceData = {
   water: {
     titleEn: 'Water Pipeline & Civic Infrastructure',
     titleAr: 'البنية التحتية لشبكات وأنابيب المياه',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/water-infrastructure.jpg',
     descEn: 'We deliver turnkey water transmission and distribution pipelines utilizing heavy excavators, certified pipe fitters, and strict hydrostatic pressure testing protocols to guarantee zero leakage and long operational lifetimes.',
     descAr: 'ننفذ مشاريع تمديد خطوط المياه وشبكات التوزيع المتكاملة باستخدام حفارات متطورة وفنيين معتمدين وتطبيق اختبارات الضغط الهيدروستاتيكي لضمان أعلى مستويات الكفاءة والاعتمادية.',
     bulletsEn: ['Water Transmission Pipeline Installation & Welding', 'Water Utility Distribution Networks', 'Hydrostatic Pressure Testing & Disinfection', 'Valve Chamber & Concrete Manhole Construction', 'Trenching & Earthworks Bedding'],
@@ -657,7 +700,7 @@ const serviceData = {
   renewable: {
     titleEn: 'Renewable Energy & Grid Interconnection',
     titleAr: 'الطاقة المتجددة والربط بالشبكة الوطنية',
-    image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/renewable-energy.jpg',
     descEn: 'Supporting the Saudi Vision 2030 renewable targets, we provide site leveling, tracker foundation piling, cable trenches, and grid-connection OHTL corridors connecting giant solar parks directly to the national grid.',
     descAr: 'دعماً لمستهدفات رؤية المملكة 2030 للطاقة النظيفة، نقوم بتسوية مواقع مزارع الطاقة الشمسية وتثبيت الهياكل وحفر مسارات الكابلات ومد خطوط الربط الشبكي بالمحطات المركزية.',
     bulletsEn: ['Solar PV Farm Civil Works & Pile Foundations', 'Grid Connection Substation Links', 'Inverter Stations & MV/HV Cable Trenching', 'Access Roads, Grading & Perimeter Security', 'Balance of Plant (BOP) Civil & Electrical Support'],
@@ -739,7 +782,7 @@ const projectData = {
     categoryAr: 'خطوط نقل الطاقة',
     statusEn: 'Completed',
     statusAr: 'مكتمل بنجاح',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/transmission-line.jpg',
     descEn: 'Complete lattice steel tower erection, torqueing, insulator stringing, and OPGW conductor installation for the ultra-high voltage transmission corridor in the Central Region.',
     descAr: 'تنفيذ وتجميع ونصب الأبراج الفولاذية العملاقة وشد الموصلات وتثبيت كابلات الألياف البصرية لخط نقل الجهد الفائق بالمنطقة الوسطى.'
   },
@@ -753,7 +796,7 @@ const projectData = {
     categoryAr: 'خطوط نقل الطاقة',
     statusEn: 'Ongoing',
     statusAr: 'قيد التنفيذ الميداني',
-    image: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/500kv-transmission-line.jpg',
     descEn: 'Ongoing assembly and high-capacity mobile crane hoisting of heavy suspension and tension towers across rugged desert and mountainous terrain in Tabuk.',
     descAr: 'عمليات التجميع المستمرة ورفع الأبراج الثقيلة بالأوناش التلسكوبية عبر تضاريس تبوك الجبلية والصحراوية الوعرة بأعلى معايير السلامة.'
   },
@@ -767,7 +810,7 @@ const projectData = {
     categoryAr: 'الأعمال المدنية',
     statusEn: 'Completed',
     statusAr: 'مكتمل بنجاح',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/road-substation-civil-works.jpg',
     descEn: 'Comprehensive earthworks, reinforced concrete foundations for high-voltage switchgear buildings, and access road network construction in Al Qassim.',
     descAr: 'تنفيذ أعمال الحفر والردم الهندسي والقواعد الخرسانية المسلحة لمحطة التحويل وشق وتعبيد شبكة الطرق الميدانية بالقصيم.'
   },
@@ -781,7 +824,7 @@ const projectData = {
     categoryAr: 'الطاقة المتجددة',
     statusEn: 'Ongoing',
     statusAr: 'قيد التنفيذ الميداني',
-    image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80',
+    image: 'media/images/img/solar-power-grid-connection.jpg',
     descEn: 'Civil works, cable trenches, transformer pad foundations, and overhead grid connection corridor integrating utility-scale solar generation into the grid.',
     descAr: 'أعمال البنية التحتية، خنادق الكابلات، وقواعد المحولات وخط الربط الهوائي لنقل الطاقة النظيفة من المحطة الشمسية إلى الشبكة العامة.'
   }

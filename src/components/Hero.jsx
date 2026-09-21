@@ -33,8 +33,8 @@ export default function Hero({ lang, onOpenQuoteModal }) {
       {/* Background Image with High-Voltage Transmission Tower at Sunset */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2000&q=85" 
-          alt="Power Grid Transmission Towers" 
+          src="media/images/img/al-afkar-hero-banner.jpg" 
+          alt="Al-Afkar Power Grid Infrastructure" 
           className="w-full h-full object-cover object-center transform scale-105 transition-transform duration-10000 hover:scale-100"
         />
         {/* Deep Emerald & Slate Corporate Gradient Overlay */}

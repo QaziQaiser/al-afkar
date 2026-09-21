@@ -62,7 +62,16 @@ export const companyData = {
     altEmail: "kikram7944@gmail.com",
     phone: "050 030 9040",
     fullAddressEn: "5473 Muhammad Ibn Alwan Al Tunsi St, 7301 Ar Rashidiyah Dist, Makkah P.C: 24275, Kingdom of Saudi Arabia",
-    fullAddressAr: "5473 شارع محمد بن علوان التونسي، 7301 حي الراشدية، مكة المكرمة 24275، المملكة العربية السعودية"
+    fullAddressAr: "5473 شارع محمد بن علوان التونسي، 7301 حي الراشدية، مكة المكرمة 24275، المملكة العربية السعودية",
+    ceoMessage: {
+      nameEn: "Eid Abed Aljuid",
+      nameAr: "عيد عابد الجعيد",
+      titleEn: "Chief Executive Officer (CEO)",
+      titleAr: "الرئيس التنفيذي",
+      image: "media/images/team/eid-aljuaid.jpg",
+      quoteEn: "At Al Afkar Al Mutafaridah Establishment, our vision is to become a trusted and professionally managed infrastructure company in the Kingdom of Saudi Arabia. Our primary focus is Power & Transmission Infrastructure, including overhead transmission lines, tower assembly and erection, and related power works.",
+      quoteAr: "في مؤسسة الأفكار المتفردة للمقاولات، تتمثل رؤيتنا في أن نصبح شركة رائدة وموثوقة ومُدارة باحترافية في مجال البنية التحتية بالمملكة العربية السعودية. ينصب تركيزنا الأساسي على البنية التحتية للطاقة ونقل الكهرباء، بما في ذلك خطوط النقل الهوائية، وتجميع ونصب الأبراج الفولاذية، وكافة الأعمال الكهربائية المرتبطة بها."
+    }
   },
 
   management: [
@@ -156,7 +165,7 @@ export const companyData = {
       titleAr: "الطاقة وخطوط النقل الكهربائي",
       subtitleEn: "High-voltage overhead transmission line execution up to 765kV with end-to-end erection and stringing.",
       subtitleAr: "تنفيذ خطوط النقل الهوائية عالية وفائقة الجهد حتى 765 ك.ف من الأساسات حتى التركيب النهائي.",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/500kv-transmission-line.jpg",
       icon: "Zap",
       color: "emerald",
       bulletsEn: [
@@ -184,7 +193,7 @@ export const companyData = {
       titleAr: "الإنشاءات والأعمال المدنية",
       subtitleEn: "Precision concrete foundations, substation substructures, excavation, and heavy structural engineering.",
       subtitleAr: "تنفيذ القواعد الخرسانية الدقيقة، مباني ومحطات التحويل الكهربائية، الحفريات والأعمال الإنشائية المتكاملة.",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/civil-construction.jpg",
       icon: "Building",
       color: "blue",
       bulletsEn: [
@@ -212,7 +221,7 @@ export const companyData = {
       titleAr: "البنية التحتية لشبكات المياه",
       subtitleEn: "Water transmission pipeline installation, trenching, piping networks, and civic utility distribution.",
       subtitleAr: "تمديد خطوط أنابيب نقل المياه الكبرى، حفر الخنادق، وشبكات التوزيع والبنية التحتية المائية.",
-      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/water-infrastructure.jpg",
       icon: "Droplets",
       color: "cyan",
       bulletsEn: [
@@ -240,7 +249,7 @@ export const companyData = {
       titleAr: "الطاقة المتجددة والربط الشبكي",
       subtitleEn: "Solar PV plant civil balance of plant, substation integration, and green energy grid interconnection.",
       subtitleAr: "الأعمال المدنية لمحطات الطاقة الشمسية، الربط الشبكي، وتهيئة مزارع الطاقة المتجددة.",
-      image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/renewable-energy.jpg",
       icon: "Sun",
       color: "amber",
       bulletsEn: [
@@ -280,7 +289,7 @@ export const companyData = {
       status: "Completed",
       statusAr: "مكتمل بنجاح",
       statusType: "success",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/transmission-line.jpg",
       descriptionEn: "Complete lattice steel tower erection, torqueing, insulator stringing, and OPGW conductor installation for the ultra-high voltage transmission corridor in the Central Region.",
       descriptionAr: "تنفيذ وتجميع ونصب الأبراج الفولاذية العملاقة وشد الموصلات وتثبيت كابلات الألياف البصرية لخط نقل الجهد الفائق بالمنطقة الوسطى."
     },
@@ -299,7 +308,7 @@ export const companyData = {
       status: "Ongoing",
       statusAr: "قيد التنفيذ الميداني",
       statusType: "active",
-      image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/500kv-transmission-line.jpg",
       descriptionEn: "Ongoing assembly and high-capacity mobile crane hoisting of heavy suspension and tension towers across rugged desert and mountainous terrain in Tabuk.",
       descriptionAr: "عمليات التجميع المستمرة ورفع الأبراج الثقيلة بالأوناش التلسكوبية عبر تضاريس تبوك الجبلية والصحراوية الوعرة بأعلى معايير السلامة."
     },
@@ -318,7 +327,7 @@ export const companyData = {
       status: "Completed",
       statusAr: "مكتمل بنجاح",
       statusType: "success",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/road-substation-civil-works.jpg",
       descriptionEn: "Comprehensive earthworks, reinforced concrete foundations for high-voltage switchgear buildings, and access road network construction in Al Qassim.",
       descriptionAr: "تنفيذ أعمال الحفر والردم الهندسي والقواعد الخرسانية المسلحة لمحطة التحويل وشق وتعبيد شبكة الطرق الميدانية بالقصيم."
     },
@@ -337,7 +346,7 @@ export const companyData = {
       status: "Ongoing",
       statusAr: "قيد التنفيذ الميداني",
       statusType: "active",
-      image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/solar-power-grid-connection.jpg",
       descriptionEn: "Civil works, cable trenches, transformer pad foundations, and overhead grid connection corridor integrating utility-scale solar generation into the grid.",
       descriptionAr: "أعمال البنية التحتية، خنادق الكابلات، وقواعد المحولات وخط الربط الهوائي لنقل الطاقة النظيفة من المحطة الشمسية إلى الشبكة العامة."
     },
@@ -356,7 +365,7 @@ export const companyData = {
       status: "Completed",
       statusAr: "مكتمل بنجاح",
       statusType: "success",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/stringing-works.jpg",
       descriptionEn: "Executed 380kV Sin Tower foundations, precise steel lattice erection, tensioning, and Paul Nut safety torqueing under strict Western Region environmental conditions.",
       descriptionAr: "تنفيذ القواعد الخرسانية لأبراج 380 ك.ف وتجميع الهياكل الفولاذية وشد النواقل وصواميل الأمان في المنطقة الغربية."
     },
@@ -375,7 +384,7 @@ export const companyData = {
       status: "Completed",
       statusAr: "مكتمل بنجاح",
       statusType: "success",
-      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      image: "media/images/img/water-infrastructure.jpg",
       descriptionEn: "Excavation, bedding, pipeline installation, concrete thrust block construction, and hydrostatic pressure testing for bulk water transmission.",
       descriptionAr: "حفر وتجهيز المسارات وتمديد خطوط الأنابيب وبناء كتل التثبيت الخرسانية وإجراء الفحوصات الهيدروستاتيكية بنجاح تام."
     }
@@ -548,7 +557,7 @@ export const companyData = {
       titleAr: "أعمال القواعد الخرسانية لأبراج النقل",
       category: "Civil Works",
       categoryAr: "الأعمال المدنية",
-      image: "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f7?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/tower-foundation-civil-works.jpg",
       descriptionEn: "Reinforced steel rebar cage assembly and concrete footing casting for 380kV/500kV lattice towers."
     },
     {
@@ -557,7 +566,7 @@ export const companyData = {
       titleAr: "تجميع الهيكل الفولاذي الشبكي للأبراج",
       category: "Assembly Works",
       categoryAr: "أعمال التجميع",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/assembly-works.jpg",
       descriptionEn: "On-site mechanical assembly, steel member torqueing, and ground alignment before crane hoisting."
     },
     {
@@ -566,7 +575,7 @@ export const companyData = {
       titleAr: "نصب ورفع الأبراج بالأوناش التلسكوبية",
       category: "Erection Works",
       categoryAr: "أعمال النصب والرفع",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/heavy-crane-tower-erection.jpg",
       descriptionEn: "High-tonnage mobile cranes lifting intermediate and peak tower sections under strict safety rigging."
     },
     {
@@ -575,7 +584,7 @@ export const companyData = {
       titleAr: "سحب وشد الموصلات وكابلات الألياف OPGW",
       category: "Stringing Works",
       categoryAr: "أعمال السحب والشد",
-      image: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/stringing-works.jpg",
       descriptionEn: "Tensioner pulling operations, sagging checks, and optical ground wire (OPGW) jointing across long spans."
     },
     {
@@ -584,7 +593,7 @@ export const companyData = {
       titleAr: "البنية المدنية لمحطات التحويل الكهربائي",
       category: "Civil Works",
       categoryAr: "الأعمال المدنية",
-      image: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/substation-civil-infrastructure.jpg",
       descriptionEn: "Transformer pad construction, cable trenches, and control room foundations in desert environment."
     },
     {
@@ -593,7 +602,7 @@ export const companyData = {
       titleAr: "تهيئة مواقع مشاريع الطاقة الشمسية",
       category: "Renewable Energy",
       categoryAr: "الطاقة المتجددة",
-      image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80",
+      image: "media/images/img/solar-farm-site-preparation.jpg",
       descriptionEn: "Civil balance of plant, site grading, pile ramming, and solar farm interconnection corridors."
     }
   ]
