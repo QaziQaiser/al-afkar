@@ -1138,14 +1138,50 @@ function handleNavScroll() {
   }
 }
 
-// 15. Initialize on Window Load
-window.addEventListener('DOMContentLoaded', () => {
-  renderEquipment();
-  updateCalc();
-  if (window.lucide) {
-    lucide.createIcons();
+// 15. Initialize on Window Load & DOM Ready Safety Net
+function initApp() {
+  try {
+    renderEquipment();
+  } catch (err) {
+    console.warn('renderEquipment notice:', err);
   }
-  window.addEventListener('scroll', handleNavScroll, { passive: true });
-  handleNavScroll();
+
+  try {
+    updateCalc();
+  } catch (err) {
+    console.warn('updateCalc notice:', err);
+  }
+
+  function triggerIcons() {
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      try {
+        window.lucide.createIcons();
+      } catch (err) {
+        console.warn('Lucide icon rendering error:', err);
+      }
+    }
+  }
+
+  triggerIcons();
+  setTimeout(triggerIcons, 50);
+  setTimeout(triggerIcons, 250);
+  setTimeout(triggerIcons, 1000);
+
+  try {
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+  } catch (err) {}
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
+
+window.addEventListener('load', () => {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
 });
 

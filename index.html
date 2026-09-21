@@ -45,8 +45,10 @@
     }
   </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Lucide Icons (Universal UMD with reliable CDN fallbacks) -->
+  <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.454.0/umd/lucide.min.js"></script>
 
   <!-- Custom Core Stylesheet -->
   <link rel="stylesheet" href="src/index.css" />
@@ -1250,9 +1252,358 @@
           data-i18n="eq-tab-civil">Foundation &amp; Civil</button>
       </div>
 
-      <!-- Equipment Grid -->
+      <!-- Equipment Grid (Pre-rendered Static HTML with Dynamic Filtering) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-start" id="equipment-grid">
-        <!-- Injected via JavaScript -->
+        <!-- 01 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Heavy Lifting">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Heavy Lifting</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">Multi-Fleet</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Heavy Mobile Telescopic Cranes</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #01</span>
+          </div>
+        </div>
+        <!-- 02 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Heavy Lifting">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Heavy Lifting</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">6 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Site Transport Pick Up Vehicles</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #02</span>
+          </div>
+        </div>
+        <!-- 03 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">10 Bundles</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Italian Steel/Synthetic Ropes 20mm</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #03</span>
+          </div>
+        </div>
+        <!-- 04 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">10 Bundles</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Italian Steel/Synthetic Ropes 18mm</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #04</span>
+          </div>
+        </div>
+        <!-- 05 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Bundles</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Italian Steel/Synthetic Ropes 22mm</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #05</span>
+          </div>
+        </div>
+        <!-- 06 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">5 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Certified Lifting Belts (5 Ton)</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #06</span>
+          </div>
+        </div>
+        <!-- 07 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">5 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Certified Lifting Belts (10 Ton)</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #07</span>
+          </div>
+        </div>
+        <!-- 08 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Erection Tools">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Erection Tools</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">Project Complete</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Complete Tower Erection Tool Sets</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #08</span>
+          </div>
+        </div>
+        <!-- 09 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="HSE & Safety">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">HSE &amp; Safety</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">150+ Sets</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Full Body Harness Belts &amp; Fall Arresters</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #09</span>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="HSE & Safety">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">HSE &amp; Safety</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">150+ Kits</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Safety Shoes &amp; PPE Comprehensive Kits</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #10</span>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Erection Tools">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Erection Tools</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">100+ Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Calibrated Torque Wrenches &amp; Spanners</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #11</span>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">50+ Sets</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Insulator Shielings &amp; Stringing Blocks</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #12</span>
+          </div>
+        </div>
+        <!-- 13 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="HSE & Safety">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">HSE &amp; Safety</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">10 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Site Accommodation &amp; Emergency Tents</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #13</span>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="HSE & Safety">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">HSE &amp; Safety</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">10 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Fully Stocked First Aid Emergency Boxes</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #14</span>
+          </div>
+        </div>
+        <!-- 15 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">T4 Heavy Tension Pullers (3.2 Ton)</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #15</span>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Chain Block 0.75 Ton</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #16</span>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Chain Block 5.0 Ton</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #17</span>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Chain Block 3.0 Ton</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #18</span>
+          </div>
+        </div>
+        <!-- 19 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">4 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Chain Block 1.5 Ton</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #19</span>
+          </div>
+        </div>
+        <!-- 20 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Foundation & Civil">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Foundation &amp; Civil</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">2 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Diesel Generator Power Sets</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #20</span>
+          </div>
+        </div>
+        <!-- 21 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Rigging & Stringing">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Rigging &amp; Stringing</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">16 Bundles</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Hanging Ropes (50m, 70m, 100m Lengths)</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #21</span>
+          </div>
+        </div>
+        <!-- 22 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Erection Tools">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Erection Tools</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">5 Units</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Industrial Angle Grinders &amp; Cutters</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #22</span>
+          </div>
+        </div>
+        <!-- 23 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Foundation & Civil">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Foundation &amp; Civil</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">1 Unit</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Hilti Compressor &amp; Earth Drill Rig</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #23</span>
+          </div>
+        </div>
+        <!-- 24 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="HSE & Safety">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">HSE &amp; Safety</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">14 Sets</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Vertical Life Line Safety Systems</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #24</span>
+          </div>
+        </div>
+        <!-- 25 -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/90 hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-start group hover:-translate-y-1" data-eq-category="Foundation & Civil">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 uppercase tracking-wider">Foundation &amp; Civil</span>
+              <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md">6 Sets</span>
+            </div>
+            <h3 class="font-heading font-bold text-sm text-slate-900 group-hover:text-emerald-700 transition-colors leading-snug">Form Box 380kV S1N Tower Foundation Sets</h3>
+          </div>
+          <div class="pt-3 mt-2 border-t border-slate-200/60 flex items-center justify-between text-[11px] text-slate-500">
+            <span class="flex items-center gap-1 text-emerald-600"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>Site Certified</span></span>
+            <span class="font-mono text-slate-400">ID #25</span>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -2468,6 +2819,26 @@
 
   <!-- Interactive Application Logic & Internationalization Script -->
   <script src="src/app.js"></script>
+  <script>
+    // Immediate and deferred icon rendering safety net
+    (function () {
+      function renderAllIcons() {
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          try {
+            window.lucide.createIcons();
+          } catch (e) {
+            console.warn('Lucide icon error:', e);
+          }
+        }
+      }
+      renderAllIcons();
+      document.addEventListener('DOMContentLoaded', renderAllIcons);
+      window.addEventListener('load', renderAllIcons);
+      setTimeout(renderAllIcons, 50);
+      setTimeout(renderAllIcons, 250);
+      setTimeout(renderAllIcons, 1000);
+    })();
+  </script>
 </body>
 
 </html>
